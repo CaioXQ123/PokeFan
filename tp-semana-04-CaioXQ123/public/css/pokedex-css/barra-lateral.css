@@ -1,0 +1,21 @@
+.barra_lateral{
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.767);
+    border: 2px solid black;
+    height: auto;
+    display: flex;
+    width: 100%;
+    margin-top: .1rem;
+}
+.lista_navegacao{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.lista_navegacao a, .lista_navegacao a:visited{
+    color: black;
+    text-decoration: none;
+}
