@@ -28,7 +28,7 @@ if (container) {
                         </p>
 
                         <a 
-                            href="detalhes.html?id=${regiao.id}"
+                            href="public/html/detalhes.html?id=${regiao.id}"
                             class="btn btn-danger"
                         >
                             Ver mais
