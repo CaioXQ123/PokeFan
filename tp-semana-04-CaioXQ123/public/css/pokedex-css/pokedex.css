@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
-@import url("/public/css/index-css/cabecalho.css");
+@import url("../index-css/cabecalho.css");
 @import url("barra-lateral.css");
 @import url("footer.css");
 @import url("response-main.css");
