@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Pokefan | Cadastro de Itens</title>
+    <link rel="stylesheet" href="../css/index-css/main.css">
+    <link rel="icon" href="../images/favicon/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho-conteudo">
+                <a href="index.html" class="cabecalho-logo">
+                    <img src="../images/logo/download.png" alt="Logo Pokemon" class="logo_pokemon">
+                    <h1 class="titulo_do_site">PokeFan</h1>
+                </a>
+                <div class="cabecalho-auth" data-auth-header></div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="container-fluid">
+        <div class="row m-3 g-2">
+            <nav class="barra_lateral barra_topo col-12">
+                <ul class="lista_navegacao me-4" data-auth-nav></ul>
+            </nav>
+        </div>
+    </aside>
+
+    <main class="container my-4">
+        <section class="card shadow p-4 mb-4">
+            <h2 class="mb-3">Cadastro de Itens (Admin)</h2>
+            <p class="mb-0">Gerencie os itens exibidos na home e na tela de detalhes.</p>
+        </section>
+
+        <section class="card shadow p-4 mb-4">
+            <h3 class="mb-3">Formulario do Item</h3>
+
+            <form id="item-form" class="row g-3">
+                <input type="hidden" id="item-id">
+
+                <div class="col-12 col-md-6">
+                    <label for="item-nome" class="form-label">Nome</label>
+                    <input type="text" id="item-nome" class="form-control" required>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <label for="item-geracao" class="form-label">Geracao</label>
+                    <input type="text" id="item-geracao" class="form-control" placeholder="Ex: Primeira">
+                </div>
+
+                <div class="col-12">
+                    <label for="item-descricao" class="form-label">Descricao curta</label>
+                    <input type="text" id="item-descricao" class="form-control" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="item-conteudo" class="form-label">Detalhes</label>
+                    <textarea id="item-conteudo" class="form-control" rows="4" required></textarea>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="item-imagem" class="form-label">Imagem do card (URL/caminho)</label>
+                    <input type="text" id="item-imagem" class="form-control" required>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="item-imagem-mapa" class="form-label">Imagem do mapa</label>
+                    <input type="text" id="item-imagem-mapa" class="form-control">
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="item-imagem-iniciais" class="form-label">Imagem dos iniciais</label>
+                    <input type="text" id="item-imagem-iniciais" class="form-control">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <label for="item-professor" class="form-label">Professor</label>
+                    <input type="text" id="item-professor" class="form-control">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <label for="item-descricao-iniciais" class="form-label">Descricao dos iniciais</label>
+                    <input type="text" id="item-descricao-iniciais" class="form-control">
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="item-cidades" class="form-label">Cidades (separadas por virgula)</label>
+                    <textarea id="item-cidades" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="item-tipos" class="form-label">Tipos de ginasio (virgula)</label>
+                    <textarea id="item-tipos" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="item-top3" class="form-label">Top 3 (virgula)</label>
+                    <textarea id="item-top3" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="col-12 d-flex gap-2 flex-wrap">
+                    <button type="submit" class="btn btn-danger">Salvar Item</button>
+                    <button type="button" id="item-cancelar" class="btn btn-outline-dark">Cancelar Edicao</button>
+                </div>
+            </form>
+
+            <p id="item-feedback" class="mt-3 mb-0"></p>
+        </section>
+
+        <section class="card shadow p-4">
+            <h3 class="mb-3">Itens Cadastrados</h3>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle m-0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Descricao</th>
+                            <th>Acoes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="item-tabela"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-site mt-4">
+        <div class="copyright text-center py-3">
+            &copy; Caio Xavier (Inspired by The Pokémon Company)
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/item-crud.js"></script>
+</body>
+
+</html>

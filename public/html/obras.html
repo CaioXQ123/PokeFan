@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<title>Pokefan | Obras</title>
+	<link rel="stylesheet" href="../css/index-css/main.css">
+	<link rel="stylesheet" href="../css/index-css/obras.css">
+	<link rel="stylesheet" href="../css/index-css/obras-responsive.css">
+	<link rel="icon" href="../images/favicon/favicon-16x16.png">
+</head>
+
+<body>
+	<header>
+		<div class="cabecalho">
+			<div class="cabecalho-conteudo">
+				<a href="index.html" class="cabecalho-logo">
+					<img src="../images/logo/download.png" alt="Logo Pokemon" class="logo_pokemon">
+					<h1 class="titulo_do_site">PokeFan</h1>
+				</a>
+				<div class="cabecalho-auth" data-auth-header></div>
+			</div>
+		</div>
+	</header>
+
+	<aside class="container-fluid">
+		<div class="row m-3 g-2">
+			<nav class="barra_lateral barra_topo col-12">
+				<ul class="lista_navegacao me-4" data-auth-nav></ul>
+			</nav>
+		</div>
+	</aside>
+
+	<main class="container-fluid">
+		<div class="row m-3 g-2">
+			<section class="col-12 p-0">
+				<div class="obras-painel p-3 p-md-4">
+					<section class="chamada-obras mb-4">
+						<h2 class="mb-2">Explore do seu jeito</h2>
+						<p class="m-0">
+							Aqui a ideia é navegar livre: anime, filmes, jogos, TCG, mangá e spin-offs em uma vitrine leve e divertida.
+						</p>
+					</section>
+
+					<section class="mb-4">
+						<div id="carouselObras" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner rounded-3 overflow-hidden">
+								<div class="carousel-item active">
+									<div class="slide-obras row g-0">
+										<div class="col-12 col-lg-6">
+											<img src="../images/info/animePokemon.png" alt="Anime Pokemon" class="img-slide-obras">
+										</div>
+										<div class="col-12 col-lg-6 p-3 p-md-4 slide-texto">
+											<h3>Anime e Filmes</h3>
+											<p>A jornada do Ash virou clássico da TV e os filmes criaram eventos épicos para fãs de todas as idades.</p>
+											<span class="tag-slide">TV, Cinema, Streaming</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="slide-obras row g-0">
+										<div class="col-12 col-lg-6">
+											<img src="../images/info/pokemonRed.png" alt="Jogos Pokemon" class="img-slide-obras">
+										</div>
+										<div class="col-12 col-lg-6 p-3 p-md-4 slide-texto">
+											<h3>Jogos Principais</h3>
+											<p>Dos clássicos de Game Boy aos títulos atuais, cada geração trouxe regiões, mecânicas e histórias memoráveis.</p>
+											<span class="tag-slide">Console, Portátil, Mobile</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="slide-obras row g-0">
+										<div class="col-12 col-lg-6">
+											<img src="../images/info/pokemonTCG.png" alt="TCG Pokemon" class="img-slide-obras">
+										</div>
+										<div class="col-12 col-lg-6 p-3 p-md-4 slide-texto">
+											<h3>TCG e Mangá</h3>
+											<p>As cartas expandiram o lado competitivo e o mangá trouxe arcos mais profundos para quem ama lore.</p>
+											<span class="tag-slide">Colecionismo e Narrativa</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselObras" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselObras" data-bs-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</button>
+						</div>
+					</section>
+
+					<section class="mb-4">
+						<h3 class="mb-3">Escolha Sua Rota de Fã</h3>
+						<div class="row g-3" id="rotas-fas"></div>
+					</section>
+
+					<section class="mb-4 curiosidades-box">
+						<h3 class="mb-3">Curiosidades Rápidas</h3>
+						<div id="momento-curioso" class="d-flex flex-wrap gap-2"></div>
+					</section>
+
+					<section class="mb-4">
+						<h3 class="mb-3">Biblioteca da Franquia</h3>
+						<div class="row g-3" id="obras-cards"></div>
+					</section>
+
+					<section>
+						<h3 class="mb-3">Por Onde Começar?</h3>
+						<div class="accordion" id="acordeonObras">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#rota1">
+										Quero algo clássico
+									</button>
+								</h2>
+								<div id="rota1" class="accordion-collapse collapse show" data-bs-parent="#acordeonObras">
+									<div class="accordion-body">
+										Comece por Pokemon Red/Blue ou FireRed/LeafGreen e assista os primeiros episódios do anime.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rota2">
+										Quero algo moderno
+									</button>
+								</h2>
+								<div id="rota2" class="accordion-collapse collapse" data-bs-parent="#acordeonObras">
+									<div class="accordion-body">
+										Explore Pokemon Horizons, Pokemon GO e jogos das gerações mais recentes para uma experiência atualizada.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rota3">
+										Quero competir e colecionar
+									</button>
+								</h2>
+								<div id="rota3" class="accordion-collapse collapse" data-bs-parent="#acordeonObras">
+									<div class="accordion-body">
+										Entre no TCG, acompanhe estratégias de deck e combine com jogos para entender melhor tipos e sinergias.
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer-site mt-4">
+		<div class="copyright text-center py-3">
+			&copy; Caio Xavier (Inspired by The Pokemon Company)
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+	<script src="../js/auth.js"></script>
+	<script src="../js/obras.js"></script>
+</body>
+
+</html>

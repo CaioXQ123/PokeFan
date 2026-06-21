@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Pokefan | Login</title>
+    <link rel="stylesheet" href="../css/index-css/main.css">
+    <link rel="stylesheet" href="../css/index-css/auth-pages.css">
+    <link rel="icon" href="../images/favicon/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho-conteudo">
+                <a href="index.html" class="cabecalho-logo">
+                    <img src="../images/logo/download.png" alt="Logo Pokemon" class="logo_pokemon">
+                    <h1 class="titulo_do_site">PokeFan</h1>
+                </a>
+                <div class="cabecalho-auth" data-auth-header></div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="container-fluid">
+        <div class="row m-3 g-2">
+            <nav class="barra_lateral barra_topo col-12">
+                <ul class="lista_navegacao me-4" data-auth-nav></ul>
+            </nav>
+        </div>
+    </aside>
+
+    <main class="container my-4">
+        <section class="painel-auth p-3 p-md-4">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-12 col-lg-5">
+                    <article class="chamada-auth h-100 p-4 d-flex flex-column justify-content-center">
+                        <h2 class="mb-3">Entre na sua jornada</h2>
+                        <p class="mb-3">Faça login para salvar regiões favoritas, marcar Pokémons na Pokédex e abrir sua coleção pessoal em Favoritos.</p>
+                        <p class="mb-0">Os dados do usuário são consultados no JSON Server e a sessão fica salva durante a navegação pelo site.</p>
+                    </article>
+                </div>
+
+                <div class="col-12 col-lg-7">
+                    <article class="cartao-auth p-4 p-md-5">
+                        <h2 class="mb-2">Login do Treinador</h2>
+                        <p class="mb-4">Use seu login e senha para recuperar sua sessão.</p>
+
+                        <form id="login-form" class="row g-3">
+                            <div class="col-12">
+                                <label for="login" class="form-label">Login</label>
+                                <input type="text" id="login" class="form-control" placeholder="Seu login" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="senha" class="form-label">Senha</label>
+                                <input type="password" id="senha" class="form-control" placeholder="Sua senha" required>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-danger w-100">Entrar</button>
+                            </div>
+                        </form>
+
+                        <p id="login-mensagem" class="mensagem-auth mt-3 mb-0"></p>
+
+                        <p class="mt-4 mb-0">Ainda nao tem conta? <a href="cadastro.html" class="link-auth">Criar cadastro</a></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-site mt-4">
+        <div class="copyright text-center py-3">
+            &copy; Caio Xavier (Inspired by The Pokémon Company)
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/auth-forms.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+@media screen and (max-width: 767.98px) {
+    .card-indicador p {
+        font-size: 1.6rem;
+    }
+
+    .grafico-card canvas {
+        min-height: 230px;
+    }
+
+    .grafico-regioes canvas {
+        min-height: 230px;
+    }
+}

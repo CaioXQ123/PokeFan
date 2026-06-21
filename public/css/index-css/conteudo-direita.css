@@ -1,0 +1,47 @@
+.conteudo_direita{
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: rgba(255, 0, 0, 0.767);
+}
+.sobre_pokemon, .iniciais_kanto{
+    margin: .8rem;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_direita{
+    color: black;
+    padding: 5%;
+    font-size: 2rem;
+}
+.mapa_regiao, .img_iniciais{
+    width: 100%;
+}
+.descricao_regiao, .descricao_iniciais{
+    padding: 3%;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#carouselRegioes .carousel-control-prev,
+#carouselRegioes .carousel-control-next {
+    width: 8%;
+    opacity: 1;
+}
+
+#carouselRegioes .carousel-control-prev-icon,
+#carouselRegioes .carousel-control-next-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+#carouselRegioes .carousel-control-prev-icon:hover,
+#carouselRegioes .carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.32);
+}

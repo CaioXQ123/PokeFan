@@ -1,0 +1,245 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "nome": "Ash Ketchum",
+      "login": "ash",
+      "senha": "pikachu123",
+      "admin": true
+    },
+    {
+      "nome": "Caio",
+      "login": "Caioxq",
+      "senha": "123",
+      "id": "rH2c79BnIw4",
+      "admin": false
+    },
+    {
+      "nome": "Brunao",
+      "login": "Brunao",
+      "senha": "123",
+      "admin": false,
+      "id": "P9Ucnl0L7Ag"
+    }
+  ],
+  "itens": [
+    {
+      "id": "1",
+      "nome": "Kanto",
+      "descricao": "A primeira regiao do universo Pokemon.",
+      "imagem": "../images/mapas/mapa kanto.png",
+      "imagemMapa": "../images/mapas/mapa kanto.png",
+      "conteudo": "Kanto e a regiao que deu origem a serie, com oito ginasios classicos e cidades marcantes para a jornada de qualquer treinador.",
+      "geracao": "Primeira",
+      "professor": "Professor Carvalho",
+      "imagemIniciais": "../images/iniciais/iniciais kanto.jpg",
+      "descricaoIniciais": "Bulbasaur, Charmander e Squirtle sao os iniciais classicos de Kanto.",
+      "cidades": [
+        "Pallet Town",
+        "Cerulean City",
+        "Saffron City"
+      ],
+      "tiposGinasios": [
+        "Rock",
+        "Water",
+        "Electric",
+        "Grass",
+        "Poison",
+        "Psychic",
+        "Fire",
+        "Ground"
+      ],
+      "top3": [
+        "Mewtwo",
+        "Mew",
+        "Dragonite"
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Johto",
+      "descricao": "Conhecida pelas lendas de Lugia e Ho-Oh.",
+      "imagem": "../images/mapas/mapa johto.png",
+      "imagemMapa": "../images/mapas/mapa johto.png",
+      "conteudo": "Johto traz uma atmosfera mistica, eventos historicos e grande conexao com a tradicao do mundo Pokemon.",
+      "geracao": "Segunda",
+      "professor": "Professor Elm",
+      "imagemIniciais": "../images/iniciais/iniciais johto.png",
+      "descricaoIniciais": "Cyndaquil, Totodile e Chikorita iniciam a aventura em Johto.",
+      "cidades": [
+        "New Bark Town",
+        "Goldenrod City",
+        "Ecruteak City"
+      ],
+      "tiposGinasios": [
+        "Flying",
+        "Bug",
+        "Normal",
+        "Ghost",
+        "Fighting",
+        "Ice",
+        "Dragon",
+        "Steel"
+      ],
+      "top3": [
+        "Lugia",
+        "Ho-Oh",
+        "Tyranitar"
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "Hoenn",
+      "descricao": "Regiao tropical cheia de oceanos e aventuras.",
+      "imagem": "../images/mapas/mapa hoenn.png",
+      "imagemMapa": "../images/mapas/mapa hoenn.png",
+      "conteudo": "Hoenn combina ilhas, mares e areas vulcanicas em uma jornada focada em exploracao e eventos climaticos.",
+      "geracao": "Terceira",
+      "professor": "Professor Birch",
+      "imagemIniciais": "../images/iniciais/iniciais hoenn.png",
+      "descricaoIniciais": "Treecko, Torchic e Mudkip sao os iniciais de Hoenn.",
+      "cidades": [
+        "Littleroot Town",
+        "Slateport City",
+        "Sootopolis City"
+      ],
+      "tiposGinasios": [
+        "Rock",
+        "Fighting",
+        "Electric",
+        "Fire",
+        "Water",
+        "Grass",
+        "Flying",
+        "Psychic"
+      ],
+      "top3": [
+        "Rayquaza",
+        "Groudon",
+        "Kyogre"
+      ]
+    },
+    {
+      "id": "4",
+      "nome": "Sinnoh",
+      "descricao": "Uma regiao fria ligada ao tempo e espaco.",
+      "imagem": "../images/mapas/mapa sinnoh.png",
+      "imagemMapa": "../images/mapas/mapa sinnoh.png",
+      "conteudo": "Sinnoh mistura montanhas nevadas e mitologia sobre tempo e espaco com presenca de lendarios icones.",
+      "geracao": "Quarta",
+      "professor": "Professor Rowan",
+      "imagemIniciais": "../images/iniciais/iniciais sinnoh.png",
+      "descricaoIniciais": "Turtwig, Chimchar e Piplup sao os iniciais de Sinnoh.",
+      "cidades": [
+        "Twinleaf Town",
+        "Jubilife City",
+        "Snowpoint City"
+      ],
+      "tiposGinasios": [
+        "Rock",
+        "Grass",
+        "Fighting",
+        "Water",
+        "Electric",
+        "Ghost",
+        "Ice",
+        "Psychic"
+      ],
+      "top3": [
+        "Arceus",
+        "Dialga",
+        "Palkia"
+      ]
+    },
+    {
+      "id": "5",
+      "nome": "Unova",
+      "descricao": "Inspirada em grandes cidades modernas.",
+      "imagem": "../images/mapas/mapa unova.png",
+      "imagemMapa": "../images/mapas/mapa unova.png",
+      "conteudo": "Unova apresenta um ambiente urbano e moderno com conflitos de ideal e verdade na narrativa principal.",
+      "geracao": "Quinta",
+      "professor": "Professor Juniper",
+      "imagemIniciais": "../images/iniciais/iniciais unova.png",
+      "descricaoIniciais": "Snivy, Tepig e Oshawott sao os iniciais de Unova.",
+      "cidades": [
+        "Nuvema Town",
+        "Castelia City",
+        "Opelucid City"
+      ],
+      "tiposGinasios": [
+        "Normal",
+        "Fighting",
+        "Electric",
+        "Water",
+        "Ground",
+        "Flying",
+        "Psychic",
+        "Dragon"
+      ],
+      "top3": [
+        "Reshiram",
+        "Zekrom",
+        "Kyurem"
+      ]
+    },
+    {
+      "id": "6",
+      "nome": "Kalos",
+      "descricao": "Famosa pela mega evolucao dos Pokemon.",
+      "imagem": "../images/mapas/mapa kalos.png",
+      "imagemMapa": "../images/mapas/mapa kalos.png",
+      "conteudo": "Kalos valoriza estilo e competicao, com destaque para a Mega Evolucao e cidades inspiradas na Europa.",
+      "geracao": "Sexta",
+      "professor": "Professor Sycamore",
+      "imagemIniciais": "../images/iniciais/iniciais kalos.png",
+      "descricaoIniciais": "Chespin, Fennekin e Froakie sao os iniciais de Kalos.",
+      "cidades": [
+        "Vaniville Town",
+        "Lumiose City",
+        "Laverre City"
+      ],
+      "tiposGinasios": [
+        "Normal",
+        "Rock",
+        "Ghost",
+        "Water",
+        "Fairy",
+        "Fighting",
+        "Flying",
+        "Electric"
+      ],
+      "top3": [
+        "Xerneas",
+        "Yveltal",
+        "Zygarde"
+      ]
+    },
+    {
+      "id": "7",
+      "nome": "Alola",
+      "descricao": "Regiao tropical inspirada no Havai.",
+      "imagem": "../images/mapas/mapa alola.png",
+      "imagemMapa": "../images/mapas/mapa alola.png",
+      "conteudo": "Alola troca os ginasios por desafios de ilha e explora uma cultura regional forte em um arquipelago tropical.",
+      "geracao": "Setima",
+      "professor": "Professor Kukui",
+      "imagemIniciais": "../images/iniciais/iniciais alola.png",
+      "descricaoIniciais": "Rowlet, Litten e Popplio sao os iniciais de Alola.",
+      "cidades": [
+        "Hauoli City",
+        "Malie City",
+        "Seafolk Village"
+      ],
+      "tiposGinasios": [
+        "Island Trials"
+      ],
+      "top3": [
+        "Solgaleo",
+        "Lunala",
+        "Tapu Koko"
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

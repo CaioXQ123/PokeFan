@@ -1,0 +1,89 @@
+.painel-favoritos {
+    border-radius: 14px;
+    border: 2px solid black;
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.25), transparent 45%),
+        linear-gradient(155deg, rgba(255, 205, 80, 0.97), rgba(226, 64, 64, 0.9));
+}
+
+.resumo-favoritos,
+.lista-favoritos-box {
+    border-radius: 18px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.82);
+}
+
+.resumo-favoritos .numero {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #a4133c;
+}
+
+.resumo-favoritos .rotulo {
+    font-size: 0.92rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.favoritos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.favorito-card {
+    border-radius: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.95);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.favorito-imagem {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.favorito-imagem-pokemon {
+    object-fit: contain;
+    padding: 1rem;
+    background: linear-gradient(180deg, rgba(255, 244, 214, 0.9), rgba(255, 255, 255, 0.95));
+}
+
+.favorito-conteudo {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-grow: 1;
+}
+
+.favorito-tag {
+    align-self: flex-start;
+    border-radius: 999px;
+    border: 1px solid #1f1f1f;
+    background-color: rgba(255, 235, 59, 0.72);
+    padding: 0.2rem 0.8rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.favorito-acoes {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.favorito-vazio {
+    border-radius: 16px;
+    border: 2px dashed rgba(0, 0, 0, 0.32);
+    background-color: rgba(255, 255, 255, 0.72);
+    padding: 2rem 1rem;
+}

@@ -1,0 +1,57 @@
+.painel-auth {
+    border-radius: 14px;
+    border: 2px solid black;
+    background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.3), transparent 38%),
+        linear-gradient(150deg, rgba(255, 208, 70, 0.96), rgba(255, 84, 84, 0.9));
+}
+
+.cartao-auth {
+    border-radius: 18px;
+    border: 2px solid rgba(0, 0, 0, 0.35);
+    background-color: rgba(255, 255, 255, 0.84);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.cartao-auth h2 {
+    font-weight: 800;
+}
+
+.cartao-auth .form-control {
+    border: 2px solid rgba(0, 0, 0, 0.28);
+    padding: 0.85rem 1rem;
+}
+
+.cartao-auth .form-control:focus {
+    border-color: #d62828;
+    box-shadow: 0 0 0 0.2rem rgba(214, 40, 40, 0.15);
+}
+
+.chamada-auth {
+    border-radius: 16px;
+    border: 2px dashed rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.62);
+}
+
+.mensagem-auth {
+    min-height: 1.5rem;
+    font-weight: 700;
+}
+
+.mensagem-auth.erro {
+    color: #9d0208;
+}
+
+.mensagem-auth.sucesso {
+    color: #2d6a4f;
+}
+
+.link-auth {
+    color: #9d0208;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link-auth:hover {
+    text-decoration: underline;
+}

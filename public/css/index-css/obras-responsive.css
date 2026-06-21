@@ -1,0 +1,14 @@
+@media screen and (max-width: 767.98px) {
+    .slide-obras,
+    .img-slide-obras {
+        min-height: 220px;
+    }
+
+    .img-slide-obras {
+        height: 220px;
+    }
+
+    .obra-card img {
+        height: 190px;
+    }
+}

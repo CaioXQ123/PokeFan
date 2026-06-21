@@ -1,0 +1,76 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: rgba(255, 0, 0, 0.767);
+}
+
+.cabecalho-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.cabecalho-logo {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    flex: 1;
+}
+
+.cabecalho-auth {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cabecalho-auth a,
+.cabecalho-auth button {
+    color: black;
+    text-decoration: none;
+    background-color: rgba(255, 235, 59, 0.8);
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-family: 'Oxanium', cursive;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.cabecalho-auth a:hover,
+.cabecalho-auth button:hover {
+    background-color: rgba(255, 235, 59, 1);
+    box-shadow: -2px 2px 0 #000;
+}
+
+.cabecalho-usuario {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+}
+
+.cabecalho-usuario-icon {
+    font-size: 1.5rem;
+}
+
+.logo_pokemon {
+    width: 30%;
+}
+.titulo_do_site{
+    color: black;
+    display: flex;
+    flex: 1;
+    font-family: 'Oxanium', cursive;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}

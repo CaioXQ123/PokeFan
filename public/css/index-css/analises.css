@@ -1,0 +1,52 @@
+.painel-analises {
+    border-radius: 16px;
+    border: 2px solid #222;
+    background: linear-gradient(145deg, rgba(255, 246, 186, 0.95), rgba(255, 224, 142, 0.93));
+}
+
+.titulo-painel h2 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    margin-bottom: 0.4rem;
+}
+
+.titulo-painel p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.card-indicador {
+    border: 2px solid #111;
+    border-radius: 12px;
+    padding: 1rem;
+    min-height: 120px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.card-indicador h3 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.card-indicador p {
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.crud-box,
+.tabela-box,
+.grafico-card {
+    border-radius: 12px;
+    border: 2px solid #222;
+    background-color: rgba(255, 255, 255, 0.78);
+    padding: 1rem;
+}
+
+.grafico-card canvas {
+    width: 100%;
+    min-height: 260px;
+}
+
+.grafico-regioes canvas {
+    min-height: 560px;
+}

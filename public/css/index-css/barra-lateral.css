@@ -1,0 +1,33 @@
+.barra_lateral{
+    border-radius: 10px;
+    font-family: 'Oxanium', cursive;
+    background-color: rgba(255, 0, 0, 0.767);
+    border: 2px solid black;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lista_navegacao{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.lista_navegacao a, .lista_navegacao a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.lista_navegacao .usuario-logado {
+    padding: 0.35rem 0.8rem;
+    border: 2px solid black;
+    border-radius: 999px;
+    background-color: rgba(255, 235, 59, 0.8);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
